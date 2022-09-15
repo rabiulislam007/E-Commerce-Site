@@ -5,10 +5,12 @@ const CartItem = ({ cartItem }) => {
   return (
     <div className='cart-item-container'>
       <img src={imageUrl} alt={`${name}`} />
-      <span className='name'>{name}</span>
-      <span className='price'>
-        {quantity} * ${price}
-      </span>
+      <div className='item-details'>
+        <span>{name}</span>
+        <span>
+          {quantity} * ${price}
+        </span>
+      </div>
     </div>
   );
 };
